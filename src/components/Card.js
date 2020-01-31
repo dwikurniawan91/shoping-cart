@@ -19,7 +19,6 @@ import StorefrontTwoToneIcon from '@material-ui/icons/StorefrontTwoTone';
 import DeleteIcon from '@material-ui/icons/Delete';
 import NumberFormat from 'react-number-format';
 import { connect } from 'react-redux';
-// import data from './data';
 
 
 const styles = theme => ({
@@ -65,7 +64,6 @@ class BottomAppBar extends Component {
       }
       
     increment() {
-        // this.props.dispatch({ type: 'INCREMENT' });
         if(this.state.quantity >= this.props.stock) {
             this.setState({ quantity: this.props.stock});
         }else{
@@ -89,9 +87,6 @@ class BottomAppBar extends Component {
     }
     render() {
             const { classes } = this.props;
-            // console.log(this.props.name)
-            // let total = this.state.price;
-            // this.props.totalProps(total);
             return (
             <React.Fragment>
             <CssBaseline />
@@ -158,9 +153,4 @@ class BottomAppBar extends Component {
         );
     }
 }
-
-// const mapsStateToProps = state => ({
-//     quantity: state.quantity,
-//     total: state.total
-// })
 export default withStyles(styles, { withTheme: true })(BottomAppBar);

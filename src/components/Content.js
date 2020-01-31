@@ -48,8 +48,6 @@ const productList = data.items;
 class BottomAppBar extends Component {
 
     render() {
-            
-
             return (
             <React.Fragment>
             <CssBaseline />
@@ -72,8 +70,4 @@ class BottomAppBar extends Component {
         );
     }
 }
-
-// const mapsStateToProps = state => ({
-//     content: state.contentReducer.data
-// })
 export default withStyles(styles, { withTheme: true })(BottomAppBar);
