@@ -1,15 +1,17 @@
-import React from 'react';
-import Appbar from './components/Appbar';
-import Content from './components/Content';
+import React, { Component } from "react";
+import Appbar from "./components/Appbar";
+import Home from "./components/Home";
 
-
-function App() {
-  return (
-    <div className="App">
-      <Appbar />
-      <Content />
-    </div>
-  );
+class App extends Component {
+ 
+  render() {
+    return (
+      <div className="App">
+        <Appbar />
+        <Home />
+      </div>
+    );
+  }
 }
 
 export default App;
