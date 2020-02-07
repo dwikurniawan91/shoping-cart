@@ -66,7 +66,6 @@ class Home extends Component {
     this.setState({
       total: this.state.total + price
     });
-    console.log(this.state.total);
   }
 
   render() {
@@ -74,7 +73,6 @@ class Home extends Component {
 
     var component = this;
     var products = this.state.productList.map(product => {
-      console.log(products);
       return (
         <React.Fragment>
           <CssBaseline />
